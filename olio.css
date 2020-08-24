@@ -82,9 +82,7 @@ p{
     z-index: 20;
     left: 0;
     top: 0;
-    width: 100vw;
-    height: auto;
-
+    width: 100vw;  
 }
 #header .header{
     min-height: 8vh;
@@ -208,7 +206,7 @@ p{
 
 /* Hero Section Styles */
 #hero{
-    background-image: url(./img/folioherobg.jpg);
+    background-image: url(./img/foliom222.jpg);
     background-size: cover;
     background-repeat: no-repeat;
     background-position: top center;
@@ -241,6 +239,9 @@ p{
     animation: text_reveal .5s ease forwards;
     animation-delay: 1s; 
 } 
+#hero h1:last-of-type{ 
+    margin-top: .69em;
+}
 #hero h1:nth-child(1){
     animation-delay: 1s;
 }
@@ -567,7 +568,7 @@ p{
 @keyframes text_reveal_name{
     100%{
         color: var(--pri-color); 
-        font-weight: 900; 
+        font-weight: 800; 
     } 
 }
 @keyframes pulse{
@@ -687,6 +688,14 @@ p{
 
 /* MEDIA QUERIES FOR DESKTOP */
 @media only screen and (min-width:1200px){
+    #hero{
+        background-image: url(./img/foliod3.jpg);
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: top center;
+        position: relative;
+        z-index: 1;
+    }
     #services .service-bottom .service-item{
         flex-basis: 22%;
         margin: 1.5%;
