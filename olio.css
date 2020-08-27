@@ -1,7 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;700&display=swap');
 
 :root{
-    --pri-color:#7DCD85;
+    --pri-color:#7DCD85;  
 } 
 *{
     margin: 0;
@@ -25,7 +25,7 @@ html{
     color: #fff;
     transition: .5s ease;
     transition-property: background-color, color;
-    text-decoration: none;
+    text-decoration: none; 
  } 
  .cta:hover{
      color: #fff;
@@ -50,7 +50,7 @@ html{
 .section-title span{
     color: var(--pri-color);
 }
-.fa{
+.fa, .fab{
     font-size: 4rem;
     color: var(--pri-color);
 }
@@ -285,14 +285,15 @@ p{
 #services .service-top{
     max-width: 500px;
     margin: 0 auto;
+    padding: 0 1.5em;
 }
 #services .service-top p{ 
-     margin-top: 5px;
+     margin: 5px 0 15px;
      line-height: 2.5rem;
      font-weight: 300;
      letter-spacing: .05rem;
      color: #000;
-     text-align: center;
+     text-align: justify;
 }
 #services .service-bottom{
     display: flex;
