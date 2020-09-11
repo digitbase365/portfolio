@@ -25,3 +25,20 @@ menu_item.forEach((item)=>{
     });
 }); 
 
+// Testimonial Carousel
+var swiper = new Swiper('.swiper-container', {
+    effect: 'coverflow',
+    grabCursor: true,
+    centeredSlides: true,
+    slidesPerView: 'auto',
+    coverflowEffect: {
+      rotate: 35,
+      stretch: 0,
+      depth: 20,
+      modifier: 1,
+      slideShadows: true,
+    },
+    loop: true,
+  });
+// End of Testimonial Carousel
+

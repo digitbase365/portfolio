@@ -416,6 +416,73 @@ p{
 }
 /* END Projects Section */
 
+/* Testimonials Declaration */
+
+#testimonials {
+    background-color: #111; 
+    margin-top: 50px;
+    padding: 45px 0;
+}
+.testimonials{ 
+    max-width: 100%;  
+    padding: 50px 0;
+    display: flex; 
+    justify-content: center;
+    align-items: center;
+    -webkit-box-reflect: below 1px linear-gradient(transparent 70%, rgba(0, 0, 0, .8));
+} 
+  .swiper-slide {
+    background-position: center;
+    background-size: cover;
+    max-width: 250px;
+    height: 350px;
+    background-color: #333;
+    color: #fff;
+    border-radius: 5px;
+    position: relative;
+    display: flex;
+    overflow: hidden;
+
+  }
+  .testimonials .layer{
+      position: absolute;
+      left: 0;
+      top: calc(100% - 2px);
+      width: 100%;
+      height: 100%;
+      background: linear-gradient(#36b7f3, #6608ad); 
+      transition: .4s ease-out;
+  }
+  .testimonials .swiper-slide:hover .layer{
+      top: 0;
+  }
+
+  .testimonials .card{
+      position: relative;
+      width: 100%;
+      height: 100%;
+      text-align: center; 
+      padding: 25px 20px;
+    }
+  .testimonials .card p{
+      margin-bottom: 3em;
+    text-align: center; 
+  }
+  .testimonials .card .imgBx{
+      height: 100px;
+      width: 100px;
+      border-radius: 50%;
+      overflow: hidden;
+      margin: 0 auto;
+      border: 4px solid #fff;  
+  } 
+  .testimonials .card .content{ 
+      position: relative;
+      z-index: 2;
+  }
+
+/* End of Testimonials Declaration */
+
 /* About Me Section */
 #about .about{
     flex-direction: column-reverse;
