@@ -2,6 +2,7 @@
 
 :root{
     --pri-color:#7DCD85;  
+    --sec-color: #13262F;
 } 
 *{
     margin: 0;
@@ -86,7 +87,7 @@ p{
 }
 #header .header{
     min-height: 8vh;
-    background-color: rgba(31, 30, 30, .24);
+    background-color: var(--sec-color);
 }
 #header .navbar{
     display: flex;
@@ -419,9 +420,12 @@ p{
 /* Testimonials Declaration */
 
 #testimonials {
-    background-color: #111; 
+    background-color: var(--sec-color); 
     margin-top: 50px;
     padding: 45px 0;
+}
+#testimonials .section-title{
+    color: #2C666E;
 }
 .testimonials{ 
     max-width: 100%;  
@@ -579,12 +583,12 @@ p{
 
 /* Footer Section */
 #footer{
-    background-image:linear-gradient(60deg, #29323c 0%, #485563 100%);
+    background-color: var(--sec-color);
 }
 #footer .footer{
     min-height: 200px;
     flex-direction: column;
-    padding-top: 50px;
+    padding-top: 30px;
     padding-bottom: 10px;
     color: #fff;
 
@@ -597,7 +601,7 @@ p{
 }
 #footer .social-icon{
     display: flex;
-    margin-bottom: 30px; 
+    margin-bottom: 10px; 
 }
 #footer .social-item{
     height: 50px;
@@ -613,6 +617,9 @@ p{
 }
 #footer p{
     font-size: .9rem;
+}
+#footer .fab{
+    font-size: 25px;
 }
 
 /* END Footer Section */
